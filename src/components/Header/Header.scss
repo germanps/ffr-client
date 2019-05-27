@@ -1,0 +1,23 @@
+@import './../../assets//scss/base.scss';
+.header{
+    @include flex(100%, row, space-between, center);
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    background-color: $white;
+    .logoWrapper{
+        @include flex(100%, row, flex-start, center);
+        .logo{
+            width: 100px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .main-title{
+            @include title(2rem, $mineshaft, normal, 700);
+        }
+    }
+    .btn{
+        @include btnPrimary(auto, $deepsea, $white, .4rem 1rem);
+    }
+}
